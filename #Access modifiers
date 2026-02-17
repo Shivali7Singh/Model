@@ -1,0 +1,162 @@
+# class AIPA :
+#  def __init__(self,name):   #PUBLIC
+#   self.name=name
+#  def display (self):
+#    print(self.name)
+# s=AIPA("Shivali")
+# s.display()
+# print(s.name)
+
+# class AIPA:
+#  def __init__(self,name,tools):  #PRIVATE
+#   self.name=name
+#   self._tools=tools
+#  def uses(self):
+#    print(self._tools)
+# t=AIPA("Soni","Almira")
+# t.uses()
+# print(t.name)
+# print(t._tools)
+
+# class AIPA:
+#  def __init__(self,name,tools,register):   #PROTECTED
+#   self.name=name
+#   self._tools=tools
+#   self.__register=register
+#   def classregister(self):
+#     print(self.__register)
+# R=AIPA("priya","laptop","CR")
+# print(R.name,R._tools,R._AIPA__register)
+# R.classregister()
+
+# class StudentRecord:
+#  def __init__(self,name,roll_no,marks):
+#     self.name=name
+#     self._roll_no=roll_no
+#     self._marks=marks
+#  def display1(self):
+#    print("student's name:",self.name)
+# # a=StudentRecord("soni",101,90)
+# # a.display()
+# #  print(a.name,a._roll_no,a._marks)
+#  def display2(self):
+#   print("roll_no:",self._roll_no)
+#  def display3(self):
+#   print("Student's marks:",self._marks)
+# a=StudentRecord("soni","101","90")
+# a.display()
+# print(a.name,a._roll_no,a._marks)
+# a.display1()
+# a.display2()
+# a.display3()
+
+#INHERITANCE:
+
+class grandfather:
+  def house(self):
+      print("This is grandfather house")
+
+class father(grandfather):
+    def car (self):
+        print("This is father's car")
+
+class son(father):
+   def bike(self):
+       print("This is son's bike")
+
+xyz=son()
+xyz.bike()
+xyz.car()
+xyz.house()
+
+abc=father()
+abc.bike()
+abc.car()
+abc.house()
+
+g=grandfather()
+g.house()
+g.car()
+g.bike()
+
+
+# class NSTI:
+#    def compus (self):
+#       print("This is NSTI compus")
+# class Trade(NSTI):
+#     def teacher(self):
+#             print("There are 40 staffs")
+# class std(Trade):
+#    def students(self):
+#       print("There are 650 students")
+# n=NSTI()
+# # n.Trade()
+# n.compus()
+# # n.students()
+
+# t=Trade()
+# t.compus()
+# # t.trade()
+# t.teacher()
+# # t.students()
+
+
+# s=std()
+# s.compus()
+# s.students()
+# s.teacher()
+# # s.trade()
+
+
+
+# class studentname:
+#     def soni(self):
+#         print("This is brilliant student")
+# class number(studentname):
+#     def marks(self):
+#         print("Her marks is 99")
+# class exam(number):
+#     def final(self):
+#         print("This is final exam")
+# s=studentname()
+# s.soni()
+# # s.marks()
+# # s.final()
+
+# n=number()
+# n.soni()
+# n.marks()
+# # n.exam()
+
+# e=exam()
+# e.soni()
+# e.marks()
+# e.final()
+
+
+class A:
+    def name(self):
+        print("My name is Shivali")
+class B():
+    def last_name(self):
+         print("singh")
+class C():
+    def familymember(self):
+       print("There are 5 members in my family") 
+x=A()
+x.name()
+# x.last_name()
+# x.familymember()
+
+y=B()
+# y.name()
+y.last_name()
+# y.familymember()
+
+z=C()
+# z.name()
+# z.last_name() 
+z.familymember()          
+
+
+
